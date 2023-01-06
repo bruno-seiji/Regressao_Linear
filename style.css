@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 950px;
+    height: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    align-self: flex-start;
+    margin-top: 8rem;
+}
+
+section h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    height:fit-content;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-weight: bolder;
+}
+section div {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+}
+
+section div label {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+section div button {
+    margin-left: 2rem;
+}
