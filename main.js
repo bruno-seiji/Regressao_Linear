@@ -4,6 +4,7 @@ const calcular = document.querySelector("#calc_btn")
 const num_pares = document.querySelector("#num_pares")
 const container = document.querySelector("#resultados")
 
+
 var arrayX = []
 var arrayY = []
 var arrayY_quadrado = []
@@ -11,6 +12,7 @@ var arrayX_quadrado = []
 var arrayXY = []
 var a=0
 var b=0
+var click_calcular = 0
 
 
 
@@ -28,8 +30,6 @@ confirmar.addEventListener("click", () => {
         calcular.classList.remove("hidden")
     }
     else {window.alert("Utilizar no minimo 2 pares (X/Y)")}
-
-    
 })
 
 calcular.addEventListener("click", ()=>{
@@ -37,12 +37,19 @@ calcular.addEventListener("click", ()=>{
   definir_array_quadrados()
   definir_arrayXY()
   definir_A_B()
-  console.log(a)
-  console.log(b)
+  click_calcular++
+  if (click_calcular>1){document.querySelector("#funcao").remove()}
+  const resultado = document.createElement("div")
+  container.appendChild(resultado)
+  resultado.setAttribute("id","funcao")
+  if (a<0){resultado.innerText = 'y  =  ' + b.toFixed(3) + 'x  ' + '  ' + a.toFixed(3) }
+  else {resultado.innerText = 'y  =  ' + b.toFixed(3)  + '  x  ' + '  +  ' + a.toFixed(3)  }
 })
 
 reset.addEventListener("click", () => {
   document.querySelector("table").remove()
+  document.querySelector("#funcao").remove()
+  click_calcular = 0
   confirmar.classList.add("show")
   confirmar.classList.remove("hidden")
   reset.classList.add("hidden")

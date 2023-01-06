@@ -53,6 +53,10 @@ body {
     width: 6rem;
 }
 
+#dados button:hover{
+    cursor: pointer;
+}
+
 #dados button:active{
     opacity: 0.3;
 }
@@ -85,6 +89,13 @@ input {
 #resultados table {
     margin-top: 2rem;
     box-sizing: border-box;
+}
+
+#funcao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
 footer{
