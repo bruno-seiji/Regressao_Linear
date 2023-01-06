@@ -8,13 +8,13 @@
 
 body {
     background-color: aquamarine;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-section {
+#container {
     width: 950px;
     height: auto;
     background-color: white;
@@ -24,7 +24,7 @@ section {
     margin-top: 8rem;
 }
 
-section h1 {
+#container2  h1 {
     color: black;
     font-size: 3rem;
     font-weight: 400;
@@ -34,18 +34,40 @@ section h1 {
     padding: 1rem;
     font-weight: bolder;
 }
-section div {
+#container2  div {
     box-sizing: border-box;
     padding: 1rem;
     display: flex;
 }
 
-section div label {
+#container2  div label {
     font-weight: bolder;
     font-size: 1.5rem;
     padding-right: 2rem;
 }
 
-section div button {
+#container2 div button {
     margin-left: 2rem;
+}
+
+#container2 table,
+#container2 table tr th
+{
+    border: 0.1rem solid black;
+}
+
+#container2 table {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#container2 table tr th{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: cyan
+}
+
+footer{
+    margin-top: 2rem;
+    text-align: center;
 }

@@ -2,7 +2,7 @@ const confirmar = document.querySelector("#confirm_btn")
 const reset = document.querySelector("#reset_btn")
 const calcular = document.querySelector("#calc_btn")
 const num_pares = document.querySelector("#num_pares")
-const container = document.querySelector("#container")
+const container = document.querySelector("#container2")
 
 var arrayX = []
 var arrayY = []
@@ -12,14 +12,7 @@ var arrayXY = []
 var a=0
 var b=0
 
-const novaTabela= document.createElement("table")
-const col1 = document.createElement ("th")
-const col2 = document.createElement ("th")
-const linha_tabela= document.createElement("tr")
-container.appendChild(novaTabela)
-novaTabela.appendChild(linha_tabela)
-linha_tabela.appendChild(col1)
-linha_tabela.appendChild(col2)
+
 
 
 confirmar.addEventListener("click", () => {
@@ -49,6 +42,16 @@ calcular.addEventListener("click", ()=>{
 
 
 function criar_tabela(){
+  const novaTabela= document.createElement("table")
+  const col1 = document.createElement ("th")
+  const col2 = document.createElement ("th")
+  const linha_tabela= document.createElement("tr")
+  container.appendChild(novaTabela)
+  novaTabela.appendChild(linha_tabela)
+  linha_tabela.appendChild(col1)
+  linha_tabela.appendChild(col2)
+
+
   col1.textContent = "X"
   col2.textContent = "Y"
   for (let i=0; i<num_pares.value; i++)
