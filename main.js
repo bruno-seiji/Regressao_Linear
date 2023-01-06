@@ -4,7 +4,6 @@ const calcular = document.querySelector("#calc_btn")
 const num_pares = document.querySelector("#num_pares")
 const container = document.querySelector("#resultados")
 
-
 var arrayX = []
 var arrayY = []
 var arrayY_quadrado = []
@@ -13,9 +12,6 @@ var arrayXY = []
 var a=0
 var b=0
 var click_calcular = 0
-
-
-
 
 confirmar.addEventListener("click", () => {
     
@@ -58,7 +54,6 @@ reset.addEventListener("click", () => {
   calcular.classList.remove("show")
   num_pares.removeAttribute("readonly",true)
 })
-
 
 function criar_tabela(){
   const novaTabela= document.createElement("table")
