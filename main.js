@@ -2,7 +2,7 @@ const confirmar = document.querySelector("#confirm_btn")
 const reset = document.querySelector("#reset_btn")
 const calcular = document.querySelector("#calc_btn")
 const num_pares = document.querySelector("#num_pares")
-const container = document.querySelector("#container2")
+const container = document.querySelector("#resultados")
 
 var arrayX = []
 var arrayY = []

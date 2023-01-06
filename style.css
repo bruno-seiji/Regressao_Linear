@@ -35,39 +35,26 @@ body {
     font-weight: bolder;
 }
 
-#container2  div {
+#dados {
     box-sizing: border-box;
     padding: 1rem;
     display: flex;
 }
 
-#container2  div label {
+#dados label {
     font-weight: bolder;
     font-size: 1.5rem;
     padding-right: 2rem;
 }
 
-#container2 div button {
+#dados button {
     margin-left: 2rem;
+    border-radius: 0.2rem;
+    width: 6rem;
 }
 
-#container2 table,
-#container2 table tr th
-{
-    border: 0.1rem solid black;
-    padding: 0.5rem 0.8rem 0.5rem 0;
-}
-
-#container2 table tr th{
-    font-weight: bolder;
-    font-size: 1.5rem;
-    background-color: cyan;
-}
-
-#container2 table {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    box-sizing: border-box;
+#dados button:active{
+    opacity: 0.3;
 }
 
 input {
@@ -75,7 +62,33 @@ input {
     font-size: 1.2rem;
 }
 
+#resultados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+#resultados table,
+#resultados table tr th
+{
+    border: 0.1rem solid black;
+    padding: 0.5rem 0.8rem 0.5rem 0;
+}
+
+#resultados table tr th{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: cyan;
+}
+
+#resultados table {
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
 footer{
     margin-top: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
