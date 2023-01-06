@@ -34,6 +34,7 @@ body {
     padding: 1rem;
     font-weight: bolder;
 }
+
 #container2  div {
     box-sizing: border-box;
     padding: 1rem;
@@ -54,17 +55,24 @@ body {
 #container2 table tr th
 {
     border: 0.1rem solid black;
-}
-
-#container2 table {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    padding: 0.5rem 0.8rem 0.5rem 0;
 }
 
 #container2 table tr th{
     font-weight: bolder;
     font-size: 1.5rem;
-    background-color: cyan
+    background-color: cyan;
+}
+
+#container2 table {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    box-sizing: border-box;
+}
+
+input {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 footer{
