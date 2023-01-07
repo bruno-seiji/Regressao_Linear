@@ -1,105 +1,97 @@
 .hidden {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 body {
-    background-color: aquamarine;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: aquamarine;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #container {
-    width: 950px;
-    height: auto;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    align-self: flex-start;
-    margin-top: 8rem;
+  width: 950px;
+  height: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin-top: 8rem;
 }
-
-#container2  h1 {
-    color: black;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-    height:fit-content;
-    box-sizing: border-box;
-    padding: 1rem;
-    font-weight: bolder;
+#container h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-weight: bolder;
 }
 
 #dados {
-    box-sizing: border-box;
-    padding: 1rem;
-    display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
 }
-
 #dados label {
-    font-weight: bolder;
-    font-size: 1.5rem;
-    padding-right: 2rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-right: 2rem;
 }
-
 #dados button {
-    margin-left: 2rem;
-    border-radius: 0.2rem;
-    width: 6rem;
+  margin-left: 2rem;
+  border-radius: 0.2rem;
+  width: 6rem;
 }
-
-#dados button:hover{
-    cursor: pointer;
+#dados button:hover {
+  cursor: pointer;
 }
-
-#dados button:active{
-    opacity: 0.3;
+#dados button:active {
+  opacity: 0.3;
 }
 
 input {
-    text-align: center;
-    font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-#resultados{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-sizing: border-box;
-    padding: 1rem;
+#resultados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding: 1rem;
 }
-
-#resultados table,
-#resultados table tr th
-{
-    border: 0.1rem solid black;
-    padding: 0.5rem 0.8rem 0.5rem 0;
-}
-
-#resultados table tr th{
-    font-weight: bolder;
-    font-size: 1.5rem;
-    background-color: cyan;
-}
-
 #resultados table {
-    margin-top: 2rem;
-    box-sizing: border-box;
+  border: 0.1rem solid black;
+  padding: 0.5rem 0.8rem 0.5rem 0;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+#resultados table tr th {
+  border: 0.1rem solid black;
+  padding: 0.5rem 0.8rem 0.5rem 0;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background-color: cyan;
 }
 
-#funcao{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+#funcao {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
-footer{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }

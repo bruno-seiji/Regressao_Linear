@@ -1,0 +1,106 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    width: 950px;
+    height: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    align-self: flex-start;
+    margin-top: 8rem;
+
+    h1 {
+        color: black;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        height:fit-content;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+}
+
+
+
+#dados {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+
+    label {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding-right: 2rem;
+    }
+    
+    button {
+        margin-left: 2rem;
+        border-radius: 0.2rem;
+        width: 6rem;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }
+    
+    button:active{
+        opacity: 0.3;
+    }
+}
+
+input {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#resultados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    table{
+    border: 0.1rem solid black;
+    padding: 0.5rem 0.8rem 0.5rem 0;
+    margin-top: 2rem;
+    box-sizing: border-box;
+
+        tr{
+            th{
+                border: 0.1rem solid black;
+                padding: 0.5rem 0.8rem 0.5rem 0;
+                font-weight: bolder;
+                font-size: 1.5rem;
+                background-color: cyan;
+            }
+        }
+    }
+}
+
+#funcao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
